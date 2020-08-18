@@ -4,9 +4,13 @@ import pytest
 
 import sys
 
+from testing.demo1.search import Search
+
 print(sys.path)
-sys.path.append("/Users/juanxu/Documents/霍格沃兹培训/01ceshiren实战项目/HogwartsLG3/testing")
-from demo1.search import Search
+
+
+# sys.path.append("/Users/juanxu/Documents/霍格沃兹培训/01ceshiren实战项目/HogwartsLG3/testing")
+# from demo1.search import Search
 
 
 def test_search1(connDB):
