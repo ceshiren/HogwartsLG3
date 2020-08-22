@@ -13,7 +13,8 @@ class AddMember(BasePage):
         self.driver.find_element(By.ID, "memberAdd_acctid").send_keys("1111")
         self.driver.find_element(By.ID, "memberAdd_phone").send_keys(phone)
         self.driver.find_element(By.CSS_SELECTOR, ".js_btn_save").click()
-        return ContactPage()
+        return ContactPage(self.driver)
 
     def get_phone_error_message(self):
         return self.driver.find_element(By.CSS_SELECTOR, ".ww_inputWithTips_WithErr .ww_inputWithTips_tips").text
+
